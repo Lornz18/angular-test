@@ -1,0 +1,22 @@
+<div class="body-login">
+    <div class="form-content">
+        <p-avatar icon="pi pi-user" styleClass="mr-2" size="xlarge" shape="circle"></p-avatar>
+        <form action="">
+            <p-inputGroup>
+                <p-inputGroupAddon>
+                    <i class="pi pi-user"></i>
+                </p-inputGroupAddon>
+                <input pInputText class="p-inputtext-lg" placeholder="Username" />
+            </p-inputGroup>
+            <p-inputGroup>
+                <p-inputGroupAddon>
+                    <i class="pi pi-lock"></i>
+                </p-inputGroupAddon>
+                <input type="text" pInputText class="p-inputtext-lg" placeholder="Password" />
+            </p-inputGroup>
+            <div class="card flex justify-content-center">
+                <p-button class="button" (click)="goToHome()" label="Login" size="large"></p-button>
+            </div>
+        </form>
+    </div>
+</div>

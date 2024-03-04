@@ -1,0 +1,41 @@
+<header>
+    <div class="container">
+        <div class="header__wrapper">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><p-button class="button" label="" size="large"><i class="pi pi-shopping-bag" style="font-size: 1.5rem"></i></p-button></li>
+            </ul>
+            <span class="p-input-icon-left" >
+                <i class="pi pi-search"></i>
+                <input type="text" pInputText [(ngModel)]="value" style="width: 100%;"/>
+            </span>
+        </div>
+    </div>
+</header>
+<div class="banner">
+    <div class="container">
+        <h1>Your one-stop destination for fashion, accessories, and more!</h1>
+    </div>
+    <div class="card">
+        <p-carousel [value]="images">
+            <ng-template let-image pTemplate="item">
+              <img [src]="image" alt="PrimeNG Carousel Slide">
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer__wrapper">
+            <p>Copyright 2024</p>
+            <ul>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><p-button class="button" label="" size="large"><i class="pi pi-shopping-bag" style="font-size: 1.5rem"></i></p-button></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</footer>
